@@ -4,17 +4,17 @@ import './BusinessList.css'
 import Business from '../Business/Business'
 
 class BusinessList extends React.Component {
-  render () {
+  render() {
     return (
-      <div classNamne='BusinessList'>
+      <div className="BusinessList">
         {
-          this.props.businessArray.map(business => {
-            return <Business business={business} key={business.name} />
+          this.props.businesses.map(business => {
+            return <Business business={business} key={business.id} />
           })
         }
       </div>
-    )
+    );
   }
 }
 
-export default BusinessList
+export default BusinessList;
